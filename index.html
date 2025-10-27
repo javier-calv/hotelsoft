@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HotelSoft - Sistema de Gestión Hotelera</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: linear-gradient(135deg, #0d6efd, #002b5c);
+    }
+    header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-weight: bold;
+    }
+    header p.slogan {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+    section h2 {
+      border-left: 5px solid #0d6efd;
+      padding-left: 10px;
+    }
+    footer {
+      background: #212529;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="text-white text-center p-4">
+    <img src="logo.JPG" alt="Logo del Hotel">
+    <h1>HotelSoft</h1>
+    <p class="slogan">Tu hogar elegante lejos de casa.</p>
+    <p>Sistema de Gestión Hotelera</p>
+  </header>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#mision">Misión</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Visión</a></li>
+          <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#requerimientos">Requerimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#negocio">Propuesta de Negocio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Misión -->
+  <section id="mision" class="container my-5">
+    <h2 class="text-primary">Misión</h2>
+    <p>
+      Brindar una experiencia de gestión hotelera eficiente y moderna, que permita a nuestros clientes administrar 
+      habitaciones y reservas de manera rápida, segura y confiable.
+    </p>
+  </section>
+
+  <!-- Sección Visión -->
+  <section id="vision" class="container my-5">
+    <h2 class="text-primary">Visión</h2>
+    <p>
+      Convertirnos en el software líder de gestión hotelera en la región, ofreciendo soluciones tecnológicas innovadoras 
+      que impulsen la productividad y satisfacción del cliente.
+    </p>
+  </section>
+
+  <!-- Sección Objetivos -->
+  <section id="objetivos" class="container my-5">
+    <h2 class="text-primary">Objetivos</h2>
+    <h4>Objetivos Generales</h4>
+    <ul>
+      <li>Facilitar la administración de hoteles mediante un sistema digital intuitivo.</li>
+      <li>Optimizar los procesos de gestión de habitaciones y reservas.</li>
+      <li>Garantizar la satisfacción tanto de administradores como de huéspedes.</li>
+    </ul>
+    <h4>Objetivos Específicos</h4>
+    <ul>
+      <li>Permitir la creación, edición y eliminación de reservas.</li>
+      <li>Ofrecer un módulo para mostrar y editar información de habitaciones.</li>
+      <li>Generar reportes de uso y disponibilidad en tiempo real.</li>
+      <li>Reducir errores manuales en la gestión hotelera.</li>
+    </ul>
+  </section>
+
+  <!-- Sección Requerimientos -->
+  <section id="requerimientos" class="container my-5">
+    <h2 class="text-primary">Requerimientos del Sistema</h2>
+    <ul class="list-group">
+      <li class="list-group-item">El sistema debe mostrar todas las habitaciones disponibles, con sus características principales (número, tipo, estado, precio).</li>
+      <li class="list-group-item">Debe permitir editar la información de cada habitación (tipo, precio, estado, disponibilidad).</li>
+      <li class="list-group-item">Debe mostrar todas las reservas realizadas, con detalles de cliente, fechas y estado.</li>
+      <li class="list-group-item">Debe permitir crear y eliminar reservas de manera segura.</li>
+      <li class="list-group-item">El sistema debe mantener un diseño amigable y fácil de usar.</li>
+      <li class="list-group-item">Identificar reservas según el tiempo restante:
+        <ul>
+          <li><span style="color:green; font-weight:bold;">Verde:</span> más de una hora restante.</li>
+          <li><span style="color:orange; font-weight:bold;">Amarillo:</span> menos de una hora restante.</li>
+          <li><span style="color:red; font-weight:bold;">Rojo:</span> reserva en tiempo de cumplimiento.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Sección Idea Formal de Negocio -->
+  <section id="negocio" class="container my-5">
+    <h2 class="text-primary">Propuesta de Negocio</h2>
+    <p>
+      <strong>HotelSoft</strong> se presenta como una solución tecnológica integral para la gestión hotelera, 
+      diseñada para optimizar el control operativo de hoteles, hostales y centros turísticos. 
+      Nuestro sistema automatiza tareas administrativas como el registro de reservas, la gestión de habitaciones y 
+      el seguimiento de pagos, permitiendo a los gerentes y administradores enfocarse en brindar una experiencia excepcional a los huéspedes.
+    </p>
+    <p>
+      Con una arquitectura moderna, escalable y segura, <strong>HotelSoft</strong> busca posicionarse como el socio 
+      tecnológico ideal para negocios del sector hotelero que desean digitalizar sus procesos, mejorar la atención al cliente 
+      y aumentar su rentabilidad mediante herramientas intuitivas, reportes inteligentes y soporte continuo.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center p-3 mt-5">
+    <p>&copy; 2025 HotelSoft - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
